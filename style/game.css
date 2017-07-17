@@ -1,0 +1,72 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: url("../images/bg.jpg") no-repeat;
+}
+#mycanvas{
+    margin: 0 auto;
+}
+#startGame,#pauseGame,#endGame,#startMedia,#pauseMedia,#loadGame{
+    width: 90px;
+    height: 35px;
+    font: 30px;
+    color: #CCCC99;
+    background-color: black;
+    border: 1px solid red;
+}
+#gameMain{
+    width: 600px;
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+}
+.game_main{
+    margin: 0 auto;
+    position: absolute;
+}
+
+#gameDataSet{
+    width: 600px;
+    height: 450px;
+    background-color: black;
+    color: red;
+    padding: 20px 20px;
+}
+#gameDataSet h3{
+    margin: 0;
+    padding: 0;
+}
+#gameDataSet form{
+    text-align: left;
+    margin: 30px 0;
+}
+#gameDataSet form div{
+    width: 64px;
+    display: inline-block;
+}
+#gameDataSet form input{
+    margin-left: 20px;
+}
+#gameDataSet form label{
+    width: 100px;
+    height: auto;
+    margin: 20px 0 20px 100px;
+    text-align: right;
+}
+#gameDataSet form #btn-gameControl{
+    width: 100%;
+    height: auto;
+    padding-left: 100px;
+    margin-top: 50px;
+}
+#gameDataSet form #btn-gameControl input{
+    width: 80px;
+}
+#gameDataSet form #btn-gameControl #reset{
+    margin-left: 150px;
+    margin-right: auto;
+}
+#submit{
+    background-color: red;
+}

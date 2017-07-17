@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="utils/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style/game.css"/>
+</head>
+<body>
+     <div id="gameMain">
+         <div class="game_main game_scene">
+             <canvas id="mycanvas" width="600" height="450">
+                 your browser not support!
+             </canvas>
+         </div>
+         <div id="gameDataSet" class="game_main game_set">
+             <h3>游戏设置</h3>
+             <form class="form-horizontal" role="form" action="#">
+                 <label>游戏时间：</label>
+                 <div><input type="radio" name="gameTime" checked value="30"/>30s</div>
+                 <div><input type="radio" name="gameTime" value="60"/>60s</div>
+                 <div><input type="radio" name="gameTime" value="90"/>90s</div><br>
+                 <label>游戏生命值：</label>
+                 <div><input type="radio" name="gameLife" checked value="1"/>1</div>
+                 <div><input type="radio" name="gameLife" value="2"/>2</div>
+                 <div><input type="radio" name="gameLife" value="3"/>3</div><br>
+                 <label>游戏分数：</label>
+                 <div><input type="radio" name="gameScore" checked value="1000"/>1000</div>
+                 <div><input type="radio" name="gameScore" value="2000"/>2000</div>
+                 <div><input type="radio" name="gameScore" value="3000"/>3000</div><br>
+                 <div id="btn-gameControl">
+                     <input class="btn btn-danger" type="button" name="submit" id="submit" value="确定"/>
+                     <input class="btn btn-default" type="reset" name="reset" id="reset" value="取消"/>
+                 </div>
+             </form>
+         </div>
+     </div>
+     <section>
+         <button id="startGame">开始游戏</button>
+         <button id="pauseGame">暂停游戏</button>
+         <button id="endGame">结束游戏</button>
+         <button id="startMedia">开始音乐</button>
+         <button id="pauseMedia">暂停音乐</button>
+         <button id="loadGame">重新开始</button>
+     </section>
+     <section id="audio_scene">
+         <audio id="backAudio" loop>
+             <source src="media/background.ogg">
+         </audio>
+         <audio id="fireAudio">
+             <source src="media/Shoot.wav">
+         </audio>
+         <audio id="enemyExplodeAudio">
+             <source src="media/ExplosionEnemy.wav">
+         </audio>
+     </section>
+     <script src="utils/jquery-3.1.1.min.js"></script>
+     <script src="utils/bootstrap.min.js"></script>
+     <script src="scripts/utils.js"></script>
+     <script src="scripts/backGround.js"></script>
+     <script src="scripts/backgroundSpirit.js"></script>
+     <script src="scripts/keycontrol.js"></script>
+     <script src="scripts/bullet.js"></script>
+     <script src="scripts/player.js"></script>
+     <script src="scripts/enemy.js"></script>
+     <script src="scripts/director.js"></script>
+     <script src="scripts/main.js"></script>
+</body>
+</html>
